@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500&display=swap');
+
+:root {
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Outfit', system-ui, sans-serif;
+  --ink: #f8ece8;
+  --muted: rgba(248, 236, 232, 0.68);
+  --rose: #f0a8b8;
+  --bg-deep: #1a1216;
+  --bg-mid: #2a1a22;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html,
+body {
+  overflow: hidden;
+  overscroll-behavior: none;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body);
+  color: var(--ink);
+  background:
+    linear-gradient(165deg, #24181e 0%, var(--bg-deep) 42%, #120e12 100%);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+button,
+a {
+  font: inherit;
+}
